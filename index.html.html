@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>UwU</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body onload="iniciarMusica()">
+  <!-- Música de fondo -->
+  <audio id="bg-music" autoplay loop>
+    <source src="Segundos Platos.mp3" type="audio/mp3" />
+  </audio>
+
+  <header>
+    <h1>PERDÓN, MI LIZ</h1>
+    <p>Prefiero intentarlo y saber que hice lo posible, que quedarme con la duda de no haberlo hecho.</p>
+  </header>
+
+  <main>
+    <section class="carta">
+      <p>Hola Lisbeth,</p>
+      <p>No vengo con excusas, sino con la verdad. Me equivoqué, y cada segundo sin ti lo siento como un eco que me recuerda mi error. Esta página representa cuánto he reflexionado y mi forma sincera de pedirte perdón.</p>
+      <p>Te pienso cada día. En cada tulipán que veo y te prometo: que haré las cosas bien, con paciencia, respeto y todo el amor que siento por ti... sea cual sea tu decisión.</p>
+      <img src="Perdon.jpeg" alt="Carta de perdón" />
+    </section>
+
+    <!-- Animación de tulipanes -->
+    <section class="tulipanes">
+      <div class="tulipanes-animados">
+        <div class="tulipan">🌷</div>
+        <div class="tulipan">🌷</div>
+        <div class="tulipan">🌷</div>
+        <div class="tulipan">🌷</div>
+        <div class="tulipan">🌷</div>
+      </div>
+    </section>
+
+    <!-- Botón para reproducir/pausar música -->
+    <section class="boton-musica-container">
+      <button id="btn-musica" class="boton-musica">▶️ Reproducir Música</button>
+    </section>
+
+    <section class="reflexion">
+      <h2>Te extraño, y te quiero. No lo olvides.</h2>
+      <blockquote>“No hay amor perfecto, pero sí decisiones sinceras para cuidar lo que se ama.”</blockquote>
+      <p>Aquí estaré, dispuesto a reconstruir lo que rompí... con o sin ti. Sé que fue mi culpa todo lo que pasamos, y te pido perdón desde el fondo del alma. Aceptaré tu decisión, si decides no saber nada más de mí.</p>
+    </section>
+
+    <section class="extra">
+      <h3>Recuerda esto:</h3>
+      <ul>
+        <li>🌷 Eres una gran chica</li>
+        <li>🌷 Estoy aprendiendo de mis errores</li>
+        <li>🌷 Nunca es tarde para hacerlo mejor</li>
+      </ul>
+    </section>
+
+    <!-- Botón para mostrar razones -->
+    <section class="mostrar-razones">
+      <button class="boton-razones" onclick="mostrarRazones()">💌 Ver 200 razones para quedarme y 1 para irme</button>
+    </section>
+
+    <!-- Sección de razones oculta inicialmente -->
+    <section class="razones fade-in" id="razones" style="display: none;">
+      <h2>🌷 200 Razones para quedarme contigo</h2>
+      <div class="razones-lista" id="lista-razones">
+        <!-- Razones generadas dinámicamente -->
+      </div>
+
+      <div class="una-razon">
+        <h3>🕊️ 1 Razón para irme</h3>
+        <p>Porque tú así lo deseas. Y si lo decides, lo respetaré, aunque me duela.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Hecho con amor, arrepentimiento... — Tom</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
